@@ -7,7 +7,7 @@ const QuizApp = () => {
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState(Array(questions.length).fill(null));
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(600);
+  const [timeLeft, setTimeLeft] = useState(3600);
 
   useEffect(() => {
     if (!isSubmitted && timeLeft > 0) {
@@ -62,7 +62,7 @@ const QuizApp = () => {
     setShowResult(false);
     setAnswers(Array(questions.length).fill(null));
     setIsSubmitted(false);
-    setTimeLeft(600);
+    setTimeLeft(3600);
   };
 
   if (isSubmitted) {
