@@ -1,13 +1,57 @@
 import { useState, useEffect } from "react";
-import { questions } from "./assets/questions";
+import {
+  questions1to40,
+  questions41to80,
+  questions81to120,
+  questions121to165,
+} from "./assets/questions"; // Update your import accordingly
+
+interface Question {
+  id: number;
+  question: string;
+  diagram: string;
+  options: string[];
+  correctAnswer: number;
+  reference?: string;
+  explanation: string;
+}
+
+interface QuestionSet {
+  id: string;
+  label: string;
+  questions: Question[];
+}
 
 const QuizApp = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-  const [showResult, setShowResult] = useState(false);
-  const [answers, setAnswers] = useState(Array(questions.length).fill(null));
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(3600);
+  const [currentQuestion, setCurrentQuestion] = useState<number>(0);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [showResult, setShowResult] = useState<boolean>(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [timeLeft, setTimeLeft] = useState<number>(2700);
+  const [currentQuestionSet, setCurrentQuestionSet] = useState<
+    Question[] | null
+  >(null);
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [answers, setAnswers] = useState<(number | null)[]>([]);
+
+  const questionSets: QuestionSet[] = [
+    { id: "1-40", label: "Questions 1-40", questions: questions1to40 },
+    { id: "41-80", label: "Questions 41-80", questions: questions41to80 },
+    { id: "81-120", label: "Questions 81-120", questions: questions81to120 },
+    { id: "121-165", label: "Questions 121-165", questions: questions121to165 },
+    // Add more question sets as needed
+  ];
+
+  const handleSetSelection = (questions: Question[]): void => {
+    setCurrentQuestionSet(questions);
+    setQuestions(questions);
+    setAnswers(Array(questions.length).fill(null));
+    setCurrentQuestion(0);
+    setSelectedAnswer(null);
+    setShowResult(false);
+    setIsSubmitted(false);
+    setTimeLeft(2700);
+  };
 
   useEffect(() => {
     if (!isSubmitted && timeLeft > 0) {
@@ -25,7 +69,7 @@ const QuizApp = () => {
     }
   }, [timeLeft, isSubmitted]);
 
-  const handleAnswerClick = (answerIndex: any) => {
+  const handleAnswerClick = (answerIndex: number): void => {
     const newAnswers = [...answers];
     newAnswers[currentQuestion] = answerIndex;
     setAnswers(newAnswers);
@@ -38,7 +82,7 @@ const QuizApp = () => {
     setShowResult(answers[currentQuestion] !== null);
   }, [currentQuestion, answers]);
 
-  const handleNextQuestion = () => {
+  const handleNextQuestion = (): void => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
@@ -46,25 +90,57 @@ const QuizApp = () => {
     }
   };
 
-  const calculateScore = () => {
-    return answers.reduce((score, answer, index) => {
-      return score + (answer === questions[index].correctAnswer ? 1 : 0);
-    }, 0);
+  const calculateScore = (): number => {
+    return answers.reduce(
+      (score: number, answer: number | null, index: number): number => {
+        if (answer === null) return score;
+        return score + (answer === questions[index].correctAnswer ? 1 : 0);
+      },
+      0
+    );
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (): void => {
     setIsSubmitted(true);
   };
 
-  const handleReset = () => {
+  const handleReset = (): void => {
+    setCurrentQuestionSet(null);
+    setQuestions([]);
+    setAnswers([]);
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setShowResult(false);
-    setAnswers(Array(questions.length).fill(null));
     setIsSubmitted(false);
-    setTimeLeft(3600);
+    setTimeLeft(2700);
   };
 
+  // Show question set selection if no set is selected
+  if (!currentQuestionSet) {
+    return (
+      <div className="max-w-7xl mx-auto p-4">
+        <div className="bg-white shadow rounded-lg">
+          <div className="p-6">
+            <h1 className="text-4xl font-bold mb-6">G3 Practice Exam 2025</h1>
+            <h2 className="text-4xl font-bold mb-6">Select Question Set</h2>
+            <div className="grid gap-4">
+              {questionSets.map((set) => (
+                <button
+                  key={set.id}
+                  onClick={() => handleSetSelection(set.questions)}
+                  className="w-full bg-black hover:bg-gray-600 text-white font-semibold py-4 px-6 rounded-lg text-2xl transition-colors"
+                >
+                  {set.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Show results page
   if (isSubmitted) {
     const score = calculateScore();
     return (
@@ -78,7 +154,7 @@ const QuizApp = () => {
             </div>
 
             <div className="space-y-6 mt-8">
-              {questions.map((q: any, idx: any) => (
+              {questions.map((q, idx) => (
                 <div key={idx} className="border-b pb-4">
                   <div className="font-semibold mb-2 text-2xl">
                     {idx + 1}. {q.question}
@@ -118,7 +194,7 @@ const QuizApp = () => {
               onClick={handleReset}
               className="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded mt-6"
             >
-              Restart Quiz
+              Return to Question Sets
             </button>
           </div>
         </div>
@@ -126,9 +202,16 @@ const QuizApp = () => {
     );
   }
 
+  // Show quiz interface
   return (
     <div className="max-w-7xl mx-auto p-4">
-      <div className="flex justify-end items-center mb-4">
+      <div className="flex justify-between items-center mb-4">
+        <button
+          onClick={handleReset}
+          className="text-gray-600 hover:text-gray-800 font-semibold"
+        >
+          ← Change Question Set
+        </button>
         <div className="text-lg font-semibold whitespace-nowrap">
           Time: {Math.floor(timeLeft / 60)}:
           {String(timeLeft % 60).padStart(2, "0")}
@@ -168,30 +251,28 @@ const QuizApp = () => {
           </div>
 
           <div className="space-y-3">
-            {questions[currentQuestion].options.map(
-              (option: any, index: any) => (
-                <div key={index} className="flex items-center space-x-3">
-                  <input
-                    type="radio"
-                    id={`answer-${index}`}
-                    name="answer"
-                    value={index}
-                    checked={selectedAnswer === index}
-                    onChange={() => !isSubmitted && handleAnswerClick(index)}
-                    disabled={isSubmitted}
-                    className="w-5 h-5"
-                  />
-                  <label
-                    htmlFor={`answer-${index}`}
-                    className={`flex-1 p-3 rounded border cursor-pointer text-2xl ${
-                      !showResult ? "hover:bg-gray-100" : ""
-                    }`}
-                  >
-                    <strong>{String.fromCharCode(65 + index)}.</strong> {option}
-                  </label>
-                </div>
-              )
-            )}
+            {questions[currentQuestion].options.map((option, index) => (
+              <div key={index} className="flex items-center space-x-3">
+                <input
+                  type="radio"
+                  id={`answer-${index}`}
+                  name="answer"
+                  value={index}
+                  checked={selectedAnswer === index}
+                  onChange={() => !isSubmitted && handleAnswerClick(index)}
+                  disabled={isSubmitted}
+                  className="w-5 h-5"
+                />
+                <label
+                  htmlFor={`answer-${index}`}
+                  className={`flex-1 p-3 rounded border cursor-pointer text-2xl ${
+                    !showResult ? "" : "hover:bg-gray-100 hover:border-gray-400"
+                  }`}
+                >
+                  <strong>{String.fromCharCode(65 + index)}.</strong> {option}
+                </label>
+              </div>
+            ))}
           </div>
 
           {questions[currentQuestion].reference && (
@@ -206,7 +287,7 @@ const QuizApp = () => {
                 onClick={() =>
                   setCurrentQuestion((prev) => Math.max(0, prev - 1))
                 }
-                className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded"
+                className="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-4 px-4 rounded"
                 disabled={currentQuestion === 0}
               >
                 Previous
@@ -214,7 +295,7 @@ const QuizApp = () => {
               {showResult && currentQuestion < questions.length - 1 && (
                 <button
                   onClick={handleNextQuestion}
-                  className="flex-1 bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded"
+                  className="flex-1 bg-black hover:bg-gray-800 text-white font-bold py-4 px-4 rounded"
                 >
                   Next Question
                 </button>
