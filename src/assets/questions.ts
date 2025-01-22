@@ -156,7 +156,7 @@ export const questions1to40 = [
       "Read the amount of water column displaced on the pressure side and add it to the amount displaced on the atmospheric side.",
       "Read the amount of water column displaced on the pressure side and subtract it from the amount displaced on the atmospheric side.",
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     reference: "",
     explanation:
       "To measure the gas pressure in a water-filled U-tube manometer, you must read the water column displacement on the pressure side.",
@@ -330,7 +330,7 @@ export const questions1to40 = [
       "12.0 cu. ft. (0.34 cu. m.)",
       "25.0 cu. ft. (0.71 cu. m.)",
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     reference: "",
     explanation:
       "Propane combustion requires a minimum of 12 cubic feet of air per cubic foot of propane.",
@@ -409,7 +409,7 @@ export const questions1to40 = [
     question: "The heat content of 1 cubic foot of propane is approximately:",
     diagram: "",
     options: ["1,000 Btu", "2,500 Btu", "10,000 Btu", "25,000 Btu"],
-    correctAnswer: 2,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "The heat content of propane is around 10,000 Btu per cubic foot.",
@@ -549,7 +549,7 @@ export const questions41to80 = [
       "high pressure burner",
       "forced draft burner",
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     reference: "Code book Definitions page 8",
     explanation:
       "A forced draft burner uses a fan or blower to supply combustion air at sufficient pressure to overcome the resistance of the burner and appliance.",
@@ -580,7 +580,7 @@ export const questions41to80 = [
       "vent connector",
       "draft connector",
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     reference: "Code book Definitions page 18",
     explanation:
       "A vent connector is the part of a venting system that carries flue gases from the appliance to the chimney or vent and may include a draft control device.",
@@ -591,7 +591,7 @@ export const questions41to80 = [
       "Which word describes the phrase 'acceptable to the authority having jurisdiction'?",
     diagram: "",
     options: ["certified", "licensed", "approved", "endorsed"],
-    correctAnswer: 3,
+    correctAnswer: 2,
     reference: "Stanford Module 4 page 28",
     explanation:
       "The term 'approved' refers to something that is deemed acceptable by the authority having jurisdiction.",
@@ -607,7 +607,7 @@ export const questions41to80 = [
       "petroleum refineries",
       "gas distribution pipelines",
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     reference: "Ontario Regulation 212/01 clause 2. (2) page 2",
     explanation:
       "The B149.1 code covers the installation of venting systems, which are essential for the safe operation of natural gas and propane appliances.",
@@ -622,7 +622,7 @@ export const questions41to80 = [
       "an appliance requiring a separate combustion air supply",
       "an appliance that operates with a positive vent static pressure and a flue loss not less than 17%",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "Code book Definitions page 6",
     explanation:
       "A Category II appliance operates with a non-positive vent static pressure and a flue loss of less than 17%.",
@@ -644,7 +644,7 @@ export const questions41to80 = [
       "What is the name of the part of a piping or tubing system which conveys gas from the main supply piping, tubing, or header to an appliance or appliances?",
     diagram: "",
     options: ["header", "branch line", "gas main", "individual feed line"],
-    correctAnswer: 4,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "The individual feed line conveys gas from the main supply piping to an appliance or appliances.",
@@ -670,7 +670,7 @@ export const questions41to80 = [
       "Propane Gas Association",
       "Ontario Propane Association",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "Unit 4 page 4 and Code book 9.2.4 page 108",
     explanation:
       "The requalification procedures for refillable propane cylinders are established by Transport Canada.",
@@ -686,7 +686,7 @@ export const questions41to80 = [
       "space heater",
       "boiler",
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     reference: "Code book B149.1 definition page 7",
     explanation:
       "A boiler is an appliance designed to supply hot liquid or vapour for space heating, processing, or power generation.",
@@ -702,7 +702,7 @@ export const questions41to80 = [
       "immersion appliance",
       "indirect fired appliance",
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     reference: "Code book Definitions page 13",
     explanation:
       "An indirect fired appliance does not mix flue gases with the medium being heated.",
@@ -718,7 +718,7 @@ export const questions41to80 = [
       "the person shall notify the distributor and the owner in writing of the condition",
       "the person shall inform the owner",
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     reference: "",
     explanation:
       "If the installation does not present an immediate hazard, the technician must notify both the distributor and the owner in writing of the condition.",
@@ -734,7 +734,7 @@ export const questions41to80 = [
       "process building",
       "industrial building",
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     reference: "Code book Definitions page 7",
     explanation:
       "An industrial building is one used in connection with production processes or storage/warehousing.",
@@ -749,7 +749,7 @@ export const questions41to80 = [
       "requirements for installing gas appliances",
       "the gas pressure for gas entering a house",
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     reference: "",
     explanation:
       "The B149.1 code is primarily used to determine the requirements for installing gas appliances.",
@@ -765,7 +765,7 @@ export const questions41to80 = [
       "CSA Standard B139",
       "CSA Standard B149.1",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "",
     explanation:
       "The installation of gas-burning appliances in manufactured homes must comply with CSA Standard Z240.4.1.",
@@ -797,7 +797,7 @@ export const questions41to80 = [
       "industrial building",
       "care or detention occupancy building",
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     reference: "Code book Definitions page 8",
     explanation:
       "An assembly building is a structure used for civic, political, educational, religious, or other public purposes, including food and drink consumption.",
@@ -809,7 +809,7 @@ export const questions41to80 = [
     diagram: "",
     options: [
       "yes",
-      "no Ontario regulation 215/01 G2 certificate. Clause 21 page 7",
+      "no",
       "yes, but only up to the fuel lock-off",
       "no, unless under the direct supervision of a Class 'A' mechanic",
     ],
@@ -889,11 +889,11 @@ export const questions41to80 = [
     diagram: "",
     options: [
       "residential occupancy",
-      "residential building Code book Definitions page 7",
+      "residential building",
       "bed-sitting room",
       "non-commercial building",
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     reference: "Code book Definitions page 7",
     explanation:
       "A 'residential occupancy' is a unit used for sleeping accommodation by persons who are not under medical care or involuntarily detained.",
@@ -905,7 +905,7 @@ export const questions41to80 = [
     diagram: "",
     options: [
       "pre draft",
-      "forced draft Code book Definitions page 9",
+      "forced draft",
       "induced draft",
       "atmospheric draft",
     ],
@@ -939,7 +939,7 @@ export const questions41to80 = [
       "establishing grades of gasoline",
       "all of the available choices",
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     reference: "Act 2000 part IV Clause 32 (1) page 25",
     explanation:
       "The director has the authority to make orders in various areas, including establishing qualifications for inspectors and establishing grades of gasoline.",
@@ -1080,7 +1080,7 @@ export const questions41to80 = [
       "shut off the gas supply and inform the Ontario Fire Marshal's office of the situation immediately",
       "shut off the gas supply and inform the Department of Labour of the situation immediately",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "St Module 4 page 32",
     explanation:
       "If a heat exchanger is found to be cracked, the gas technician must shut off the gas supply and immediately inform the Technical Standards and Safety Authority (TSSA).",
@@ -1213,7 +1213,7 @@ export const questions81to120 = [
     question: "The resistance reading across a good fuse will be:",
     diagram: "",
     options: ["0 volts", "0 ohms", "0 amps", "infinity"],
-    correctAnswer: 3,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "A good fuse, which is not blown, will have a resistance reading of infinity because it doesn't conduct electricity when not in use.",
@@ -1233,14 +1233,9 @@ export const questions81to120 = [
     id: 87,
     question: "What is the total current in this series circuit?",
     diagram: "https://i.ibb.co/VDbQwYf/Screenshot-2025-01-07-at-4-42-04-PM.png",
-    options: [
-      "10 Amps",
-      "3 Amps",
-      "6 Amps",
-      "4 Amps IT = VT/RT or ET/RT = 120 V÷ 30 Ω = 4 Amps",
-    ],
+    options: ["10 Amps", "3 Amps", "6 Amps", "4 Amps"],
     correctAnswer: 3,
-    reference: "",
+    reference: "IT = VT/RT or ET/RT = 120 V÷ 30 Ω = 4 Amps",
     explanation:
       "The total current in a series circuit is calculated by dividing the voltage by the total resistance. In this case, 120V ÷ 30Ω = 4 Amps.",
   },
@@ -1525,7 +1520,7 @@ export const questions81to120 = [
       "The current reading will be the same no matter where it is taken in the circuit",
       "Voltage drop across each load is less than the voltage supplied",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "",
     explanation:
       "In a parallel circuit, the total resistance is always less than the smallest individual resistance, because current can flow through multiple paths.",
@@ -1603,7 +1598,7 @@ export const questions81to120 = [
       "list indicating the materials required to complete an installation",
       "list of all the materials used manufacturing the equipment CSA book module 6 page 44",
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     reference: "",
     explanation:
       "A bill of materials lists all the materials required to complete an installation.",
@@ -1618,7 +1613,7 @@ export const questions81to120 = [
       "give the building address, indicate the building size, show its elevations, list the mechanical equipment, and show its location, show all permits",
       "give the building address, show the owner’s name, installer’s name, permit numbers, the equipment list and the warranty",
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "",
     explanation:
       "Mechanical drawings provide information about building layout, piping, equipment location, and other structural aspects.",
@@ -1660,7 +1655,7 @@ export const questions81to120 = [
       'If the scale on a mechanical drawing is 1/8" – 1’0", then a line measuring 4" in length is actually:',
     diagram: "",
     options: ["32 inches", "4 feet", "8 feet", "32 feet"],
-    correctAnswer: 0,
+    correctAnswer: 3,
     reference: "",
     explanation:
       'At a scale of 1/8" = 1\'0", a 4" line on the drawing represents 32 inches in real life (4 inches x 8).',
@@ -1688,7 +1683,7 @@ export const questions121to165 = [
       "Using the graph below on a roof with a 12/12 pitch and no obstructions, the minimum vent height for a natural gas fired appliance is:",
     diagram: "",
     options: ["2 feet", "4 feet", "6 feet", "10 feet"],
-    correctAnswer: 0,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "At a 12/12 pitch, the minimum vent height for a natural gas-fired appliance is 2 feet as per the provided graph.",
@@ -1855,7 +1850,7 @@ export const questions121to165 = [
       "The required pipe size for section 'A' of the main supply line is:",
     diagram: "https://i.ibb.co/Hx6yHww/Screenshot-2025-01-08-at-7-24-05-PM.png",
     options: ['2"', '2 1/2"', '3"', '4"'],
-    correctAnswer: 2,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "Pipe size calculations depend on flow rate, pressure loss, and code requirements for gas piping systems.",
@@ -1866,7 +1861,7 @@ export const questions121to165 = [
       "The required pipe size for section 'E' of the main supply line is:",
     diagram: "",
     options: ['2"', '2 1/2"', '3"', '4"'],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "",
     explanation:
       "Section 'E' sizing is based on load requirements and layout constraints.",
@@ -1877,7 +1872,7 @@ export const questions121to165 = [
       "The required pipe size for section 'G' of the main supply line is:",
     diagram: "",
     options: ['1"', '1 1/4"', '1 1/2"', '2"'],
-    correctAnswer: 1,
+    correctAnswer: 3,
     reference: "",
     explanation:
       "The pipe size is determined using standard gas pipe sizing tables based on demand.",
@@ -1888,7 +1883,7 @@ export const questions121to165 = [
       "The required pipe size for section 'K' of the main supply line is:",
     diagram: "",
     options: ['1"', '1 1/4"', '1 1/2"', '2"'],
-    correctAnswer: 0,
+    correctAnswer: 2,
     reference: "",
     explanation:
       "Pipe sizing considers both distance and load to ensure proper flow rates.",
@@ -1899,7 +1894,7 @@ export const questions121to165 = [
       "The required pipe size for section 'B' of the sub-supply line is:",
     diagram: "",
     options: ['1 1/2"', '2"', '2 1/2"', '3"'],
-    correctAnswer: 1,
+    correctAnswer: 0,
     reference: "",
     explanation:
       "Code standards and flow requirements influence the sizing of sub-supply lines.",
@@ -1932,7 +1927,7 @@ export const questions121to165 = [
       "The required pipe size for the branch line supplying the duct furnace is:",
     diagram: "",
     options: ['1"', '1 1/4"', '1 1/2"', '2"'],
-    correctAnswer: 0,
+    correctAnswer: 1,
     reference: "",
     explanation:
       "Proper sizing ensures the duct furnace operates at its intended capacity without pressure drops.",
@@ -1958,7 +1953,7 @@ export const questions121to165 = [
     question: "Boilers transfer heat to water through:",
     diagram: "",
     options: ["conduction", "radiation", "convection", "a latent process"],
-    correctAnswer: 0,
+    correctAnswer: 2,
     reference: "Stanford Module 9, Page 33",
     explanation:
       "Boilers primarily use conduction to transfer heat directly from the heating surface to the water.",
@@ -2254,7 +2249,7 @@ export const questions121to165 = [
       "vapour-filled sensors",
       "rod and tube sensors",
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     reference: "Stanford book Module 9, Page 25",
     explanation:
       "Liquid-filled capillary tubes are commonly used for precise temperature control in under-fired storage water heaters.",
