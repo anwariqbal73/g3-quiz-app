@@ -2311,3 +2311,670 @@ export const questions121to165 = [
       "A G.2 technician or higher must inspect the installation to ensure it meets regulatory and safety standards.",
   },
 ];
+export const v2Questions27to60 = [
+  {
+    id: 27,
+    question: "A luminous flame is caused by:",
+    diagram: "",
+    options: [
+      "premixing air and fuel prior to combustion",
+      "not premixing air and fuel prior to combustion",
+      "a low ignition temperature",
+      "the presence of carbon monoxide",
+    ],
+    correctAnswer: 1, // "not premixing air and fuel prior to combustion" is correct
+    reference: "",
+    explanation:
+      "A luminous flame occurs when air and fuel are not premixed, leading to incomplete combustion and glowing carbon particles.",
+  },
+  {
+    id: 30,
+    question:
+      "The products of complete combustion of a natural gas or propane are primarily:",
+    diagram: "",
+    options: [
+      "hydrogen, water (vapour), and heat",
+      "carbon, carbon monoxide, and heat",
+      "water (vapour), carbon dioxide, and heat",
+      "hydrogen, carbon, and heat",
+    ],
+    correctAnswer: 2, // "water (vapour), carbon dioxide, and heat" is correct
+    reference: "",
+    explanation:
+      "Complete combustion of natural gas or propane produces water vapour, carbon dioxide, and heat.",
+  },
+  {
+    id: 39,
+    question: "By definition, the specific gravity of a gas (vapour) is the:",
+    diagram: "",
+    options: [
+      "weight of the gas compared to the weight of air",
+      "weight of the gas as compared to the weight of an equal volume of air",
+      "volume of the gas compared to the weight of an equal volume of air",
+      "volume of the gas as compared to the weight of air",
+    ],
+    correctAnswer: 1, // "weight of the gas as compared to the weight of an equal volume of air" is correct
+    reference: "",
+    explanation:
+      "Specific gravity is the ratio of the weight of a gas to the weight of an equal volume of air.",
+  },
+  {
+    id: 42,
+    question: "Two undesirable products of incomplete combustion are:",
+    diagram: "",
+    options: [
+      "CO and aldehydes",
+      "CO and N2",
+      "CO2 and aldehydes",
+      "CO and heat",
+    ],
+    correctAnswer: 0, // "CO and aldehydes" is correct
+    reference: "",
+    explanation:
+      "Incomplete combustion produces carbon monoxide (CO) and aldehydes, both of which are harmful.",
+  },
+  {
+    id: 43,
+    question:
+      "In a natural gas and air mixture, what are the approximate lower and upper limits of flammability?",
+    diagram: "",
+    options: ["2% to 10%", "4% to 14%", "5% to 40%", "10% to 20%"],
+    correctAnswer: 1, // "4% to 14%" is correct
+    reference: "",
+    explanation:
+      "Natural gas is flammable when its concentration in air is between approximately 4% and 14%.",
+  },
+  {
+    id: 44,
+    question: "The lower and upper flammable limits of propane in air are:",
+    diagram: "",
+    options: ["2.0% - 11.0%", "2.4% - 9.5%", "4.0% - 14.0%", "5.5% - 14.0%"],
+    correctAnswer: 1, // "2.4% - 9.5%" is correct
+    reference: "",
+    explanation: "Propane's flammable range in air is between 2.4% and 9.5%.",
+  },
+  {
+    id: 45,
+    question:
+      "At 60°F (15.5°C), one pound of liquid propane will produce how many cubic feet of vapour?",
+    diagram: "",
+    options: ["2.12", "4.30", "8.50", "10.10"],
+    correctAnswer: 2, // "8.50" is correct
+    reference: "",
+    explanation:
+      "One pound of liquid propane expands to approximately 8.50 cubic feet of vapour at 60°F.",
+  },
+  {
+    id: 47,
+    question:
+      "Which valve automatically shuts off the supply of gas when de-energized by a combustion safety control, safety limit control, or loss of the actuating medium?",
+    diagram: "",
+    options: [
+      "emergency shut off valve",
+      "safety shut off valve",
+      "main shut off valve",
+      "test firing valve",
+    ],
+    correctAnswer: 1, // "safety shut off valve" is correct
+    reference: "",
+    explanation:
+      "A safety shut-off valve automatically stops gas flow when safety controls detect an issue.",
+  },
+  {
+    id: 49,
+    question:
+      "Where an appliance cannot be installed in accordance with regulations, what is required to be done?",
+    diagram: "",
+    options: [
+      "prior to installation, a deviation from the regulations must be applied for and accepted by the Technical Standards and Safety Authority",
+      "the appliance may be installed and the installer must certify that the installation is safe",
+      "the appliance may be installed if authorized by the gas distributor",
+      "a deviation from the regulations must be applied for prior to completion of the installation and the start-up of the appliance",
+    ],
+    correctAnswer: 0, // "prior to installation, a deviation from the regulations must be applied for and accepted by the Technical Standards and Safety Authority" is correct
+    reference: "",
+    explanation:
+      "Before installation, a deviation request must be approved by the Technical Standards and Safety Authority (TSSA).",
+  },
+  {
+    id: 50,
+    question: "What is the largest size of propane cylinder manufactured?",
+    diagram: "",
+    options: [
+      "240 lbs. WC (109 kg)",
+      "300 lbs. WC (136 kg.)",
+      "420 lbs. WC (190 kg.)",
+      "1,000 lbs. WC (454 kg.)",
+    ],
+    correctAnswer: 3, // "1,000 lbs. WC (454 kg.)" is correct
+    reference: "",
+    explanation:
+      "The largest commonly manufactured propane cylinder is 1,000 lbs. WC (454 kg.).",
+  },
+  {
+    id: 53,
+    question:
+      "Where the heat exchanger of an appliance installed in a dwelling unit is found to be defective:",
+    diagram: "",
+    options: [
+      "the appliance must be replaced",
+      "the heat exchanger must be repaired",
+      "the manufacturer must be notified",
+      "the heat exchanger must be replaced",
+    ],
+    correctAnswer: 3, // "the heat exchanger must be replaced" is correct
+    reference: "",
+    explanation:
+      "A defective heat exchanger poses a safety risk and must be replaced to ensure proper operation and safety.",
+  },
+  {
+    id: 54,
+    question:
+      'Where in the B149.1-05 code book will a person find the table required to size a propane tubing system that is to be operated at a pressure of 11" w.c.(2.7 kPa,) based on a pressure drop of 1" w.c. (250 Pa):',
+    diagram: "",
+    options: [
+      "Annex A, table A.8, A.8 (M)",
+      "Annex A, table A.10, A.10 (M)",
+      "Annex B, table B.6, B.6 (M)",
+      "Annex B, table B.7, B.7 (M)",
+    ],
+    correctAnswer: 1, // "Annex A, table A.10, A.10 (M)" is correct
+    reference: "",
+    explanation:
+      'The correct table for sizing propane tubing at 11" w.c. with a 1" w.c. drop is found in Annex A, Table A.10, A.10 (M).',
+  },
+  {
+    id: 55,
+    question:
+      "What is the term for a regulating device that is adjusted to deliver gas at atmospheric pressure within its flow rating?",
+    diagram: "",
+    options: [
+      "zero governor",
+      "pressure regulating controller",
+      "atmospheric pressure regulator",
+      "pressure/flow valve",
+    ],
+    correctAnswer: 0, // "zero governor" is correct
+    reference: "",
+    explanation:
+      "A zero governor maintains gas flow at atmospheric pressure and adjusts based on system demand.",
+  },
+  {
+    id: 56,
+    question:
+      "Which of the following establishes minimum standards for the repair and servicing of gas appliances?",
+    diagram: "",
+    options: [
+      "Natural Gas and Propane Installation Code",
+      "Underwriters Laboratories of Canada",
+      "National Building Code",
+      "Canadian Standards Association",
+    ],
+    correctAnswer: 0, // "Natural Gas and Propane Installation Code" is correct
+    reference: "",
+    explanation:
+      "The Natural Gas and Propane Installation Code sets the minimum safety and service standards for gas appliances.",
+  },
+  {
+    id: 57,
+    question:
+      "A person who has to work on a boiler where asbestos has to be handled must refer to the:",
+    diagram: "",
+    options: [
+      "National Building Code",
+      "Occupational Health and Safety Act and Regulations",
+      "Technical Standards and Safety Act",
+      "Dangerous Goods Transportation Act and Regulations",
+    ],
+    correctAnswer: 1, // "Occupational Health and Safety Act and Regulations" is correct
+    reference: "",
+    explanation:
+      "Asbestos handling falls under the Occupational Health and Safety Act and Regulations for worker protection.",
+  },
+  {
+    id: 58,
+    question:
+      "Which expression best describes a control intended to prevent an unsafe condition of temperature, pressure, or liquid level?",
+    diagram: "",
+    options: [
+      "roll out switch",
+      "safety limit control",
+      "fan control",
+      "high/low pressure switch",
+    ],
+    correctAnswer: 1, // "safety limit control" is correct
+    reference: "",
+    explanation:
+      "A safety limit control prevents unsafe conditions by shutting down the system if temperature, pressure, or liquid level exceed safe limits.",
+  },
+  {
+    id: 59,
+    question:
+      "An authorization holder who is not in agreement with the Director's ruling may:",
+    diagram: "",
+    options: [
+      "write to the Director for a further review",
+      "appeal to the Divisional Court",
+      "ignore the ruling",
+    ],
+    correctAnswer: 1, // "appeal to the Divisional Court" is correct
+    reference: "",
+    explanation:
+      "If an authorization holder disagrees with the ruling, they can formally appeal to the Divisional Court.",
+  },
+  {
+    id: 60,
+    question: "When cylinders are being transported, they shall be secured:",
+    diagram: "",
+    options: [
+      "vertically with chains and straps and a relief valve, in a well-ventilated space",
+      "in an upright position with chains and straps and a relief valve, in a well-ventilated space",
+      "in an upright position, in a well-ventilated location with the relief valve communicating with the vapour space only",
+      "in an upright position, in a well-ventilated location with the relief valve communicating with the liquid space only",
+    ],
+    correctAnswer: 2, // "in an upright position, in a well-ventilated location with the relief valve communicating with the vapour space only" is correct
+    reference: "",
+    explanation:
+      "Propane cylinders must be transported upright in a well-ventilated space with the relief valve communicating with the vapour space for safety.",
+  },
+];
+////////////////////////////////
+export const v2Questions61to80 = [
+  {
+    id: 61,
+    question:
+      "Which type of pilot is supervised by a primary safety control which must sense the presence of the pilot flame prior to gas being admitted to the main burner:",
+    diagram: "",
+    options: [
+      "proved pilot",
+      "flame safeguard control",
+      "intermittent pilot",
+      "monitored pilot system",
+    ],
+    correctAnswer: 0,
+    reference: "",
+    explanation:
+      "A proved pilot ensures the presence of the flame before allowing gas flow to the main burner.",
+  },
+  {
+    id: 62,
+    question: "Every person commits an offense who:",
+    diagram: "",
+    options: [
+      "contravenes the Act",
+      "makes a false statement",
+      "fails to comply with an authorization",
+      "all of the available choices",
+    ],
+    correctAnswer: 3,
+    reference: "",
+    explanation: "All these actions are considered offenses under the Act.",
+  },
+  {
+    id: 63,
+    question:
+      "In cases of a threat to public safety, a Director may make orders:",
+    diagram: "",
+    options: [
+      "as he sees fit",
+      "that contravene the provisions Act",
+      "related to matters that have not been provided in the Act",
+      "in languages other than English",
+    ],
+    correctAnswer: 0,
+    reference: "",
+    explanation:
+      "The Director has authority to issue orders to ensure public safety.",
+  },
+  {
+    id: 64,
+    question:
+      "Which of the following is the ultimate authority under The Technical Standards and Safety Act as it applies to the installation of natural gas & propane appliances and equipment:",
+    diagram: "",
+    options: [
+      "Federal Government",
+      "Ontario Government",
+      "National Energy Board",
+      "Ontario Ministry of Energy",
+    ],
+    correctAnswer: 1,
+    reference: "",
+    explanation:
+      "The Ontario Government enforces the Technical Standards and Safety Act.",
+  },
+  {
+    id: 65,
+    question: "A person who is served with an order to comply may:",
+    diagram: "",
+    options: [
+      "only comply with the order",
+      "not comply with the order",
+      "appeal to the director for changes to the order",
+      "ignore the order",
+    ],
+    correctAnswer: 2,
+    reference: "",
+    explanation:
+      "A person may appeal to the Director for modifications to the order.",
+  },
+  {
+    id: 66,
+    question: "An intermittent ignition source:",
+    diagram: "",
+    options: [
+      "continues to function during the entire period that the flame is present",
+      "ceases to function after the ignition period",
+      "always functions, regardless if there is a call for heat",
+      "is manually activated",
+    ],
+    correctAnswer: 1,
+    reference: "",
+    explanation:
+      "An intermittent ignition source stops functioning after ignition is complete.",
+  },
+  {
+    id: 67,
+    question:
+      "Which type of pilot burns at low turndown throughout the entire time the burner is in service, except that upon a call for heat, the fuel flow to the pilot is automatically increased to produce a flame which will reliably ignite the main burner fuel:",
+    diagram: "",
+    options: [
+      "turndown pilot",
+      "throttling pilot",
+      "expanding pilot",
+      "cycling pilot",
+    ],
+    correctAnswer: 1,
+    reference: "",
+    explanation: "A throttling pilot adjusts flame size based on heat demand.",
+  },
+  {
+    id: 70,
+    question:
+      "A Notice of Proposal to deny an authorization will inform the person of:",
+    diagram: "",
+    options: ["their right to a hearing with the Director"],
+    correctAnswer: 0,
+    reference: "",
+    explanation: "The notice informs individuals of their right to appeal.",
+  },
+  {
+    id: 71,
+    question:
+      "A person might be refused authorization to perform any duties under the Act where:",
+    diagram: "",
+    options: [
+      "the person is late in submitting the paperwork",
+      "the person resides outside of Ontario",
+      "the person employs persons with landed immigration status",
+      "the person is not qualified",
+    ],
+    correctAnswer: 3,
+    reference: "",
+    explanation: "Qualification is required for authorization under the Act.",
+  },
+  {
+    id: 72,
+    question: "What is the Category III Appliance:",
+    diagram: "",
+    options: [
+      "an appliance with a power burner",
+      "a natural gas or propane-fired water heater or central furnace",
+      "an appliance that operates with a non-positive vent static pressure and a flue loss of not less than 17%",
+      "an appliance that operates with a positive vent static pressure and a flue loss of not less than 17%",
+    ],
+    correctAnswer: 3,
+    reference: "",
+    explanation:
+      "Category III appliances operate with positive vent pressure and specific flue loss.",
+  },
+  {
+    id: 73,
+    question: "What is a Category II Appliance:",
+    diagram: "",
+    options: [
+      "an appliance that operates with a non-positive vent static pressure and a flue loss of less than 17%",
+      "an appliance with a power burner",
+      "an appliance requiring a separate combustion air supply",
+      "an appliance that operates with a positive vent static pressure and a flue loss not less than 17%",
+    ],
+    correctAnswer: 0,
+    reference: "",
+    explanation:
+      "Category II appliances operate with a non-positive vent static pressure and low flue loss.",
+  },
+  {
+    id: 74,
+    question: "The Minister may make orders:",
+    diagram: "",
+    options: [
+      "establishing qualifications for Inspectors",
+      "regarding inspections by insurers",
+      "establishing grades of gasoline",
+      "all of the available choices",
+    ],
+    correctAnswer: 3,
+    reference: "",
+    explanation:
+      "The Minister has broad authority to make orders in these areas.",
+  },
+  {
+    id: 75,
+    question: "What is a Category I Appliance:",
+    diagram: "",
+    options: [
+      "an appliance with a power burner",
+      "a natural gas or propane-fired water heater or central furnace",
+      "an appliance that operates with a non-positive vent static pressure and a flue loss of not less than 17%",
+      "an appliance that operates with a positive vent static pressure & a flue loss not less than 17%",
+    ],
+    correctAnswer: 2,
+    reference: "",
+    explanation:
+      "Category I appliances operate with a non-positive vent pressure and specific flue loss.",
+  },
+  {
+    id: 78,
+    question: "During an inspection, every person shall:",
+    diagram: "",
+    options: [
+      "hinder or obstruct the inspector at all times",
+      "assist the inspector, but not be responsible to produce anything",
+      "assist the inspector and produce anything where necessary",
+      "do nothing",
+    ],
+    correctAnswer: 2,
+    reference: "",
+    explanation:
+      "Assisting the inspector and providing necessary items is required.",
+  },
+  {
+    id: 79,
+    question:
+      "Which type of appliance does not have the flue gases mixed with the medium being heated:",
+    diagram: "",
+    options: [
+      "direct-fired appliance",
+      "non-vented space heater",
+      "immersion appliance",
+      "indirect fired appliance",
+    ],
+    correctAnswer: 3,
+    reference: "",
+    explanation:
+      "Indirect fired appliances keep flue gases separate from the heated medium.",
+  },
+  {
+    id: 80,
+    question:
+      "When manufacturer's instructions do not state the required clearance between combustible materials and the base of a factory-built chimney, the installer may refer to the:",
+    diagram: "",
+    options: [
+      "Ontario Building Code",
+      "Occupational Health and Safety Act and Regulations",
+      "Technical Standards and Safety Act",
+      "Dangerous Goods Transportation Act and Regulations",
+    ],
+    correctAnswer: 0,
+    reference: "",
+    explanation:
+      "The Ontario Building Code provides guidance when manufacturer instructions are absent.",
+  },
+];
+export const v2Questions84to110 = [
+  {
+    id: 84,
+    question:
+      "A person might be refused authorization to perform any duties under the Act where:",
+    diagram: "",
+    options: [
+      "the person is not qualified",
+      "the person resides outside of Ontario",
+      "the person employs persons with landed immigrant status",
+      "the person does not submit paperwork",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 85,
+    question:
+      "When the installation of an appliance constitutes a conversion from another form of energy to gas, the installer must:",
+    diagram: "",
+    options: [
+      "advise the user in writing of the follow in discontinuing the supply of the former form of energy",
+      "remove all aspects of the previous installation",
+      "remove the electrical supply wiring from the panel",
+      "advise the previous energy supplier of the change",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 92,
+    question:
+      "The voltage reading across an open switch of an energized electrical circuit should be:",
+    diagram: "",
+    options: [
+      "the applied current",
+      "the applied voltage",
+      "zero volts",
+      "zero ohms",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 95,
+    question:
+      "Which of the following statements concerning a series electrical circuit is correct?",
+    diagram: "",
+    options: [
+      "There is only one load in a series circuit.",
+      "The loads in a series circuit are independent of each other.",
+      "The voltage drop across each load in a series circuit is always equal.",
+      "If one load opens in a series circuit then all loads will stop operating.",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 98,
+    question: "Which statement is incorrect?",
+    diagram: "",
+    options: [
+      "The series-parallel circuit is the most common type of circuit used in gas appliances.",
+      "A corroded switch will cause a parallel circuit to act like a series-parallel circuit.",
+      "The series circuit is the only type of circuit used in heating appliances.",
+      "The parallel circuit is never used in heating appliances.",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 99,
+    question:
+      "The total current in a parallel circuit (i.e. taken at source) will be:",
+    diagram: "",
+    options: [
+      "0 volts",
+      "the supply amperage",
+      "0 amps",
+      "the sum of the current passing through each branch circuit",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 100,
+    question: "For current to flow through a wiring system there must be:",
+    diagram: "",
+    options: [
+      "a difference in electrical pressure between two connected points",
+      "a continuous pathway between the two points of flow",
+      "a circuit made of conducting material",
+      "all of the available choices",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 101,
+    question:
+      "If a co-worker is suffering a shock from an electrical circuit and cannot let go of the circuit, the first action to take is:",
+    diagram: "",
+    options: [
+      "call the emergency response phone number",
+      "give the co-worker a quick push to free him or her from the circuit.",
+      "disconnect the power to the electrical circuit.",
+      "grab the closest object and shove the person away from the circuit.",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 108,
+    question: "Safety directives and bulletins are issued by the:",
+    diagram: "",
+    options: [
+      "local utility or fuel supplier",
+      "manufacturer",
+      "Technical Standards and Safety Authority",
+      "Underwriters Laboratories of Canada",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 109,
+    question:
+      "Venting and air supply requirements are in section _____________________________of the B149. 1-05 Code.",
+    diagram: "",
+    options: ["3", "5", "7", "8"],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 110,
+    question: "Equipment service bulletin are normally issued by the :",
+    diagram: "",
+    options: [
+      "local utility or fuel supplier",
+      "manufacturer",
+      "Technical Standards and Safety Authority",
+      "Canadian Standards Association",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+];
