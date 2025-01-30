@@ -5,7 +5,7 @@ import {
   questions81to120,
   questions121to165,
   v2Questions27to60,
-  v2Questions84to110,
+  v2Questions84to160,
 } from "./assets/questions"; // Update your import accordingly
 
 interface Question {
@@ -47,9 +47,9 @@ const QuizApp = () => {
       questions: v2Questions27to60,
     },
     {
-      id: "sheet2 27-60",
-      label: "Sheet2 Questions 84-110",
-      questions: v2Questions84to110,
+      id: "sheet2 84-160",
+      label: "Sheet2 Questions 84-160",
+      questions: v2Questions84to160,
     },
     // Add more question sets as needed
   ];

@@ -2820,7 +2820,7 @@ export const v2Questions61to80 = [
       "The Ontario Building Code provides guidance when manufacturer instructions are absent.",
   },
 ];
-export const v2Questions84to110 = [
+export const v2Questions84to160 = [
   {
     id: 84,
     question:
@@ -2972,6 +2972,378 @@ export const v2Questions84to110 = [
       "manufacturer",
       "Technical Standards and Safety Authority",
       "Canadian Standards Association",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 111,
+    question:
+      'If the scale on a mechanical drawing is 1/8" - 1\'0" then a line measuring 4" in length is actually:',
+    diagram: "",
+    options: ["32 inches", "4 feet", "8 feet", "32 feet"],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 112,
+    question:
+      "All furnace appliance manufacturers’ literature gives the name of the manufacturer, the:",
+    diagram: "",
+    options: [
+      "physical dimensions, fan motor electrical resistance data, and the Btuh input",
+      "Btuh input, fan size, CFM, voltage, fuse size, and the physical dimensions",
+      "fuse size, Btuh output, amount of heat required to heat the building, and the size of wire",
+      "size of chimney or vent riser, Btuh output, fuse size, and the physical dimensions",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 113,
+    question: "Mechanical drawings are used to:",
+    diagram: "",
+    options: [
+      "give the building address, show the equipment location, piping layout, duct sizing and duct layout",
+      "give the building address, locate the building on the site, location of adjacent structures, piping layout, and show equipment location",
+      "give the building address, indicate the building size, show its elevations, list the mechanical equipment, and show its location, show all permits",
+      "give the building address, show the owner's name, installer's name, permit numbers, the equipment list and the warranty",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 114,
+    question: 'A "bill of material" is a:',
+    diagram: "",
+    options: [
+      "list sent by the manufacturer as a check list of the materials delivered to site",
+      "purchase order copy indicating the materials which were ordered",
+      "list indicating the materials required to complete an installation",
+      "list of all the materials used manufacturing the equipment",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 115,
+    question: "Equipment wiring diagrams indicate which of the following?",
+    diagram: "",
+    options: [
+      "supply voltage, wire size from panel, fuse size, internal wiring",
+      "supply voltage, internal wiring, location of controls, field wiring",
+      "supply voltage, fuse size, type of disconnect switch, factory wiring",
+      "supply voltage, size of control wiring, location of gas valve, factory wiring",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 116,
+    question:
+      "On a roof with a 10/12 pitch, and a wall 4 feet high and 6 feet away from the vent opening, what is the minimum vent height for a category one propane fired appliance?",
+    diagram: "",
+    options: ["2 feet", "3 feet", "6 feet", "10 feet"],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 117,
+    question: "Equipment specifications indicate mainly:",
+    diagram: "",
+    options: [
+      "dimensions required to install the appliance, weight of the equipment, electrical characteristics, size and location of the vent outlet, piping inlet size, model number",
+      "size of the building required to accommodate the equipment, parts list, weight of equipment, installation clearances, piping outlet size, serial number",
+      "address of the installation, required appliance output, electrical characteristics, weight of the equipment, branch piping size, model number",
+      "physical dimensions required to install the appliance, weight of equipment, fuel consumption, CO content of the fuel consumed, electrical characteristics, size and location of the vent outlet",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 118,
+    question:
+      "On a roof with a 12/12 pitch and no obstructions, the minimum vent height for a natural gas fired appliance is:",
+    diagram: "",
+    options: ["2 feet", "4 feet", "6 feet", "10 feet"],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 119,
+    question:
+      "A broken or dotted line on a manufacturer's wiring diagram normally indicates:",
+    diagram: "",
+    options: [
+      "factory installed wiring",
+      "a white conductor only",
+      "optional accessory",
+      "field installed wiring",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 120,
+    question: "The B149.1-05 Code is used to determine:",
+    diagram: "",
+    options: [
+      "the best method of servicing an appliance",
+      "the input of gas appliances",
+      "requirements for installing gas appliances",
+      "the gas pressure for gas entering a house",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 121,
+    question:
+      "To correct a symptom such as a fluctuating flame, a technician should first:",
+    diagram: "",
+    options: [
+      "notify the local utility or fuel supplier",
+      "contact the equipment supplier",
+      "consult the manufacturer's instructions",
+      "exchange the appliance and contact the manufacture",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 122,
+    question:
+      'The word "symptom" is used in manufacturer\'s literature to describe:',
+    diagram: "",
+    options: [
+      "how a piece of equipment functions",
+      "problems arising because of equipment venting",
+      "problems arising because of equipment wiring",
+      "abnormal operation of the equipment",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 137,
+    question: "Which of the following statements is correct?",
+    diagram: "",
+    options: [
+      "Dielectric unions shall be used at all times.",
+      'It is not necessary to ream the ends of gas piping larger than 1".',
+      "Natural rubber gaskets may be used in natural gas system.",
+      "Close nipples shall not be used in gas piping system",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 138,
+    question:
+      "In the absence of a readily accessible burner, an appliance not equipped with a continuous pilot shall be purged in accordance with:",
+    diagram: "",
+    options: [
+      "Annex H of the B 149. 1-05 code",
+      "the manufacturer's instructions",
+      "Annex A of the B 149. 2-05 code",
+      "the local distributer's procedures",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 139,
+    question: "Concealed piping must be pressure tested:",
+    diagram: "",
+    options: [
+      "prior to being concealed",
+      "whenever an appliance has been repaired",
+      "at double the pressure required for piping that is exposed",
+      "at double the time required for piping that is exposed",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 140,
+    question:
+      "If a 1/2 cubic foot test dial makes one complete revolution in 18 seconds, the input is:",
+    diagram: "",
+    options: ["80,000 Btuh", "90,000 Btuh", "100,000 Btuh", "110,000 Btuh"],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 141,
+    question: "Steel piping used in a gas installation shall comply with:",
+    diagram: "",
+    options: [
+      "ASTM A 53 or ASTM A 106",
+      "ANSI Standard B 16.3",
+      "ASTM B 16.3 or ASTM B 837",
+      "None of the above",
+    ],
+    correctAnswer: 0, // a->0
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 143,
+    question:
+      "How is the longest equivalent length determined for system operating over 2 psig?",
+    diagram: "",
+    options: [
+      "add 20% length of the run",
+      "add the equivalent length in feet of straight pipe for each fitting, bend or valve to the shortest run of pipe",
+      "subtract 20% of length of the run",
+      "add the equivalent length in feet of straight pipe for each fitting, bend or valve to the longest pipe run",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 144,
+    question:
+      "The actual pressure drop in a gas line measured by subtracting the:",
+    diagram: "",
+    options: [
+      "static pressure at the appliance from the static pressure at the gas meter outlet",
+      "static pressure at the appliance from the working pressure at the gas meter outlet",
+      "working pressure at the appliance from the working pressure at the gas meter",
+      "working pressure at the appliance from the static pressure at the gas meter outlet",
+    ],
+    correctAnswer: 2, // c->2
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 146,
+    question:
+      "A residential central forced air gas furnace heating system works on the principle of drawing:",
+    diagram: "",
+    options: [
+      "cold return air across the burner and expelling it into the conditioned area",
+      "cold air from central areas of the house, then forcing this air across a heat exchanger and back into the house",
+      "cold supply air from central areas of the house then forcing it across a heat exchanger and back the house through the return air ducts",
+      "conditioned air from a central area of the house then forcing it across a heat exchanger and returning it back into the house through the supply air ducts",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 147,
+    question:
+      "Spillage of flue gases at the appliance draft diverter is an indication of:",
+    diagram: "",
+    options: [
+      "an updraft condition in the appliance venting system",
+      "under firing",
+      "normal operation",
+      "a restriction in the venting system",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 148,
+    question:
+      "If the return and supply air plenum is both located on the top of the furnace, the furnace is a:",
+    diagram: "",
+    options: [
+      "high boy",
+      "low boy",
+      "counter flow, or down flow",
+      "horizontal",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 152,
+    question: "Which of the following does not have an air circulating blower?",
+    diagram: "",
+    options: [
+      "make up air unit",
+      "unit heater",
+      "rooftop package unit",
+      "gravity warm air system",
+    ],
+    correctAnswer: 3, // d->3
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 154,
+    question: "The configuration of a 'Hi BOY' forced air gas furnace has:",
+    diagram: "",
+    options: [
+      "supply air exiting at the top and return air entering at the top",
+      "return air entering at the top and supply air exiting at the bottom",
+      "supply air entering at the bottom and return air exiting at the top",
+      "supply air exiting at the top and return air entering at the bottom",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 157,
+    question: "A surface combustion infrared heater requires:",
+    diagram: "",
+    options: [
+      "no vent",
+      "a class 'B' vent",
+      "a class 'BW' vent",
+      "a class 'C' vent",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 158,
+    question: "A yellow flame at an atmospheric burner could be the result of:",
+    diagram: "",
+    options: [
+      "low gas pressure",
+      "insufficient primary air",
+      "pilot outage",
+      "excessive primary air",
+    ],
+    correctAnswer: 1, // b->1
+    reference: "",
+    explanation: ".",
+  },
+  {
+    id: 160,
+    question: "What is TEMPERATURE RISE in a forced warm air furnace?",
+    diagram: "",
+    options: [
+      "the temperature difference between the outdoor air and the return air",
+      "the temperature difference between the supply air and the return air",
+      "the temperature difference between the outdoor air and the supply air",
+      "the temperature difference between the return air and the flue gas",
     ],
     correctAnswer: 1, // b->1
     reference: "",
